@@ -28,7 +28,7 @@ export default class Blank extends React.Component {
   render = () => (
     <View>
       <Button title="Press me!" onPress={() => alert("Pressed!")} />
-      <Text>This is Text1</Text>
+      <Text style={styles.Text_7}>This is Text1</Text>
       <TouchableOpacity
         onPress={() => this.props.navigation.navigate("BlankScreen72182104")}
       >
@@ -41,6 +41,6 @@ export default class Blank extends React.Component {
 const styles = StyleSheet.create({
   View_1: {},
   Button_3: {},
-  Text_7: {},
+  Text_7: { color: "#941297", fontStyle: "italic" },
   Text_5: {}
 })
