@@ -28,8 +28,12 @@ export default class Blank extends React.Component {
   render = () => (
     <View>
       <Button title="Press me!" onPress={() => alert("Pressed!")} />
-      <Text>Sample text content</Text>
-      <Text>Sample text content</Text>
+      <Text>This is Text1</Text>
+      <TouchableOpacity
+        onPress={() => this.props.navigation.navigate("BlankScreen72182104")}
+      >
+        <Text>This is Text2</Text>
+      </TouchableOpacity>
     </View>
   )
 }
